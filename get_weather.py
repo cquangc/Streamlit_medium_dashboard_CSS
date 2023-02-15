@@ -7,6 +7,7 @@ city_name = "Stockholm"
 complete_url = base_url + "appid=" + api_key + "&q=" + city_name + "&units=metric"
 response = requests.get(complete_url)
 x = response.json()
+st.write('x = ', x)
 
 #GLOBALS
 
